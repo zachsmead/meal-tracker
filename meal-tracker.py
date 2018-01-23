@@ -19,7 +19,6 @@ def add_meal():
     for (k, v) in amounts.items():
         if v[0] > 0:
             v[0] -= input('Enter the amount of %s (in %s): ' % (k, v[1]))
-    print_remaining_amounts()
 
 def check_for_completion():
     for (k, v) in amounts.items():
