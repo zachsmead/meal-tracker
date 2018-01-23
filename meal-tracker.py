@@ -6,7 +6,7 @@ amounts = {
     'blueberries': [0.5, 'cups'],
     'nuts': [0.5, 'cups'],
     'cottage cheese': [0.75, 'cups'],
-    'yogurt': [1, 'cups']
+    'yogurt': [16, 'tbsp']
 }
 
 def print_remaining_amounts():
