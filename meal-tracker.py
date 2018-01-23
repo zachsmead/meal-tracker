@@ -19,7 +19,15 @@ def add_meal():
     print_remaining_amounts()
     for (k, v) in amounts.items():
         if v[0] > 0:
-            v[0] -= input('Enter the amount of %s (in %s): ' % (k, v[1]))
+            while True:
+                try:
+                    amount_input = raw_input('Enter the amount of %s (in %s): ' % (k, v[1]))
+                    v[0] -= eval(amount_input)
+                except (NameError, SyntaxError) as error: # this catches 2 errors as 'error',
+                                                          # and you can do stuff like handle(error)
+                    print "Sorry, that wasn't a valid input. Please enter a number."
+                else:
+                    break
 
 def check_for_completion():
     for (k, v) in amounts.items():
