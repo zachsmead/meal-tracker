@@ -5,7 +5,7 @@ amounts = {
     'banana': [1, 'serving'],
     'blueberries': [0.5, 'cups'],
     'nuts': [0.5, 'cups'],
-    'cottage cheese': [0.75, 'cups'],
+    'cottage cheese': [12, 'tbsp'],
     'yogurt': [16, 'tbsp']
 }
 
