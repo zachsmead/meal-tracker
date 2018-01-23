@@ -1,18 +1,19 @@
 amounts = {
     'oatmeal': [3, 'cups'],
-    'peanut_butter': [4, 'tbsp'],
-    'protein_powder': [2, 'servings'],
+    'peanut butter': [6, 'tbsp'],
+    'protein powder': [2.5, 'servings'],
     'banana': [1, 'serving'],
     'blueberries': [0.5, 'cups'],
     'nuts': [0.5, 'cups'],
-    'milk': [4, 'cups'],
+    'cottage cheese': [0.75, 'cups'],
     'yogurt': [1, 'cups']
 }
 
 def print_remaining_amounts():
     print 'Amounts Left:'
     for (k, v) in amounts.items():
-        print '%r: %r %s' % (k, v[0], v[1]) # v[0] = the amount, v[1] = the measurement
+        if v[0] > 0:
+            print '%r: %r %s' % (k, v[0], v[1]) # v[0] = the amount, v[1] = the measurement
 
 def add_meal():
     print_remaining_amounts()
