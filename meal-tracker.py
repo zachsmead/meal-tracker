@@ -1,11 +1,11 @@
 amounts = {
     'oatmeal': [3, 'cups'],
     'peanut butter': [6, 'tbsp'],
-    'protein powder': [2.5, 'servings'],
+    'protein powder': [2, 'servings'],
     'banana': [1, 'serving'],
     'blueberries': [0.5, 'cups'],
     'nuts': [0.5, 'cups'],
-    'cottage cheese': [12, 'tbsp'],
+    'cottage cheese': [24, 'tbsp'],
     'yogurt': [16, 'tbsp']
 }
 
